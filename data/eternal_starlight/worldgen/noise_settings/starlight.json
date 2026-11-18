@@ -1,0 +1,84 @@
+{
+  "default_block": "eternal_starlight:grimstone",
+  "default_fluid": {
+    "id": "minecraft:water",
+    "properties": {
+      "level": "0"
+    }
+  },
+  "disable_mob_generation": false,
+  "legacy_random_source": false,
+  "material_rule": "eternal_starlight:starlight",
+  "noise": {
+    "height": 384,
+    "min_y": -64
+  },
+  "noise_router": {
+    "temperature": "minecraft:overworld/temperature",
+    "vegetation": "minecraft:overworld/vegetation",
+    "continents": "minecraft:overworld/continents",
+    "erosion": "minecraft:overworld/erosion",
+    "depth": "eternal_starlight:depth",
+    "ridges": "minecraft:overworld/ridges",
+    "chunk_surface_level": {
+      "type": "minecraft:interpolated",
+      "cell_size_xz": 16,
+      "cell_size_y": 1,
+      "input": 0.0
+    },
+    "final_density": {
+      "type": "minecraft:add",
+      "left": 0.0,
+      "right": {
+        "type": "minecraft:beardifier"
+      }
+    }
+  },
+  "sea_level": 48,
+  "spawn_target": [
+    {
+      "minecraft:overworld/temperature": [
+        -1.0,
+        1.0
+      ],
+      "minecraft:overworld/vegetation": [
+        -1.0,
+        1.0
+      ],
+      "minecraft:overworld/continents": [
+        -0.11,
+        1.0
+      ],
+      "minecraft:overworld/erosion": [
+        -1.0,
+        1.0
+      ],
+      "minecraft:overworld/ridges": [
+        -1.0,
+        -0.16
+      ]
+    },
+    {
+      "minecraft:overworld/temperature": [
+        -1.0,
+        1.0
+      ],
+      "minecraft:overworld/vegetation": [
+        -1.0,
+        1.0
+      ],
+      "minecraft:overworld/continents": [
+        -0.11,
+        1.0
+      ],
+      "minecraft:overworld/erosion": [
+        -1.0,
+        1.0
+      ],
+      "minecraft:overworld/ridges": [
+        0.16,
+        1.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "attributes": {
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawn_costs": {},
+        "spawns_by_category": {}
+      },
+      "modifier": "overlay"
+    },
+    "minecraft:visual/sky_color": "#501e50",
+    "minecraft:visual/fog_color": "#501e50",
+    "minecraft:visual/water_fog_color": "#7159ae"
+  },
+  "carvers": [
+    "minecraft:cave"
+  ],
+  "downfall": 0.5,
+  "effects": {
+    "water_color": "#7159ae",
+    "foliage_color": "#7864c8",
+    "grass_color": "#3e2e4a"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_grass_savanna"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "temperature": 0.5
+}

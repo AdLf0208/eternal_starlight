@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:gradient",
+    "axis": "y",
+    "from_coordinate": -64,
+    "to_coordinate": 320,
+    "from_value": 1.5,
+    "to_value": -1.5
+  },
+  "right": {
+    "type": "minecraft:cache",
+    "input": {
+      "type": "minecraft:cache",
+      "input": {
+        "type": "minecraft:mul",
+        "left": 0.03,
+        "right": {
+          "type": "minecraft:noise",
+          "noise": "eternal_starlight:depth_offset",
+          "xz_scale": 0.3,
+          "y_scale": 0.0
+        }
+      }
+    }
+  }
+}

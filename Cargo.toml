@@ -1,0 +1,19 @@
+[package]
+# Port of Eternal Starlight 0.9.1 (Minecraft Java 1.21.1, NeoForge) for
+# Minecraft Java 26.3 on Horizon at the pin in horizon-mod.toml. Clean-room
+# Rust rewrite from the mod's behaviour; see notes.md. Local-only until
+# publishing is approved; publishable under MIT with this source.
+#
+# Cargo's name and version are not the mod's identity: horizon-mod.toml is.
+name = "eternal_starlight"
+version = "0.2.0"
+edition = "2024"
+license = "MIT"
+description = "Eternal Starlight for Horizon: the Starlight dimension, slice 1"
+publish = false
+
+[dependencies]
+# The pinned SDK's API crate, fetched into .horizon/sdk/ by any `cargo horizon-mod` command (the
+# launcher builds against its own copy of the same build). Any other registry dependency must be
+# pinned with `horizon-launcher native-lock .` before building.
+horizon-mod-api = { path = ".horizon/sdk/api/crates/horizon-mod-api" }
